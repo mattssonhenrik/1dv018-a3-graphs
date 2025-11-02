@@ -40,9 +40,8 @@ public class App {
         System.out.print("Edges: ");
         for (int[] e : directedGraph.edges())
             System.out.print("(" + e[0] + "->" + e[1] + ") ");
-        System.out.println("\n");
 
-        System.out.println("The weight of edge (1-3) is: " + directedGraph.weight(+1, 3));
+        System.out.println("The weight of edge (1-3) is: " + directedGraph.weight(1, 3));
         System.out.println("The weight of edge (1-2) is: " + directedGraph.weight(1, 2));
         System.out.println("Removing edge between 0 and 1!");
         directedGraph.removeEdge(0, 1);
@@ -75,7 +74,7 @@ public class App {
         for (int[] e : unDirectedGraph.edges())
             System.out.print("(" + e[0] + "-" + e[1] + ") ");
         System.out.println();
-        System.out.println("The weight of edge (1-3) is: " + unDirectedGraph.weight(+1, 3));
+        System.out.println("The weight of edge (1-3) is: " + unDirectedGraph.weight(1, 3));
         System.out.println("The weight of edge (1-2) is: " + unDirectedGraph.weight(1, 2));
         System.out.println("Removing edge between 0 and 1!");
         unDirectedGraph.removeEdge(0, 1);

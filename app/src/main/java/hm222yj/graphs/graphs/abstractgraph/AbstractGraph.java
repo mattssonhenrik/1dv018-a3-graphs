@@ -22,7 +22,7 @@ public abstract class AbstractGraph {
     }
 
     public void addEdge(int v, int w) {
-        addEdge(v, w, 0.0);
+        addEdge(v, w, 1);
     }
 
     public boolean hasEdge(int v, int w) {
